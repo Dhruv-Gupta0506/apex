@@ -12,7 +12,7 @@ const messageSchema=new mongoose.Schema({
     },
     text:{
         type:String,
-        requried:true,
+        required:true,
         trim:true
     },
     createdAt:{
@@ -22,4 +22,4 @@ const messageSchema=new mongoose.Schema({
 })
 
 const Message=mongoose.model('Message',messageSchema);
-module.export=Message;
+module.exports=Message;
